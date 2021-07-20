@@ -16,13 +16,14 @@ export const styles = StyleSheet.create({
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'space-between',
-    paddingVertical: 20
+    paddingTop: 20,
+    paddingBottom: 17
   },
   title: {
     fontFamily: theme.fonts.title700,
     color: theme.colors.heading,
     fontSize: 15,
-    marginTop: 15
+    marginTop: 16,
   },
   unchecked: {
     position: 'absolute',
