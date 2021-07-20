@@ -24,7 +24,7 @@ export const styles = StyleSheet.create({
     fontSize: 15,
     marginTop: 15
   },
-  check: {
+  unchecked: {
     position: 'absolute',
     top: 7,
     right: 7,
