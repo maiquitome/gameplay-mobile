@@ -1,15 +1,24 @@
+import { LinearGradient } from "expo-linear-gradient";
 import React from "react";
 import { Image } from "react-native";
+import { theme } from "../../global/styles/theme";
 import { styles } from "./styles";
 
 export function GuildIcon() {
-  const uri = 'https://img2.gratispng.com/20180427/wvq/kisspng-discord-logo-computer-icons-reddit-zongzi-14-0-1-5ae3de249d00b2.2332496115248829806431.jpg'
+  const uri = 'https://i.pinimg.com/originals/0e/f3/d1/0ef3d1c3ddb4991db19c9ee4ac57ca1d.jpg'
+
+  const { secondary50, secondary70 } = theme.colors;
 
   return (
-    <Image
-      source={{ uri }}
-      style={styles.image}
-      resizeMode="cover"
-    />
+    <LinearGradient
+      style={styles.container}
+      colors={[secondary50, secondary70]}
+    >
+      <Image
+        source={{ uri }}
+        style={styles.image}
+        resizeMode="cover"
+      />
+    </LinearGradient>
   )
 }

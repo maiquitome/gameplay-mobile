@@ -11,8 +11,8 @@ export const styles = StyleSheet.create({
     marginRight: 8,
   },
   content: {
-    width: 100,
-    height: 116,
+    width: 103,
+    height: 119,
     borderRadius: 8,
     alignItems: 'center',
     justifyContent: 'space-between',

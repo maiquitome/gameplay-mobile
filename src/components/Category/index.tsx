@@ -26,10 +26,13 @@ export function Category({
   return (
     <RectButton {...rest}>
       <LinearGradient
-        style={styles.container}
-        colors={[secondary70, secondary50]}
+        style={[styles.container, { opacity: checked ? 1 : 0.5 }]}
+        colors={[secondary50, secondary70]}
       >
-        <View style={[styles.content, { opacity: checked ? 1 : 0.5 }]}>
+        <LinearGradient
+          style={styles.content}
+          colors={[secondary85, secondary40]}
+        >
           <View style={
             checked ? styles.checked : styles.check
           } />
@@ -42,7 +45,7 @@ export function Category({
           <Text style={styles.title}>
             {title}
           </Text>
-        </View>
+        </LinearGradient>
       </LinearGradient>
     </RectButton >
   );
